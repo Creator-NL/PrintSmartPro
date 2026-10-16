@@ -42,13 +42,27 @@ Whether you need to generate a single barcode and copy it to your clipboard in o
 - **Direct Printer & Driver Control:**
   - Select any installed Windows printer on the fly and open its native driver preferences (`⚙️`) with a single click.
 
----
+## Supported Hardware & Printer Setup
 
-## Supported Hardware & Printers
+### Thermal Label Printers: Zebra GK420d
+PrintSmartPro is tested and tuned for the **Zebra GK420d** (`ZDesigner GK420d` driver).
 
-- **Thermal Label Printers:** Tested and optimized for **Zebra GK420d** (`ZDesigner GK420d` driver).
-  - *Tip for Zebra GK420d users:* In **Printing Preferences > Dithering**, set Dithering type to **None** for the sharpest barcode edges.
-- **Standard Office Printers:** Any Windows-compatible A4 laser or inkjet printer, plus **Microsoft Print to PDF**.
+> [!IMPORTANT]
+> **Essential Zebra GK420d Configuration Tips:**
+> 
+> 1. **Dithering Set to "None" (Prevents Unscannable Barcodes):**  
+>    By default, printer drivers often enable dithering, which produces jagged, dotted edges on thermal labels that barcode scanners can struggle to read. Open your printing preferences, go to the **Dithering** tab, and select **None** for razor-sharp, solid black lines.
+> 
+>    ![Zebra GK420d Dithering Preference](assets/zebra-gk420d-dithering.png)
+> 
+> 2. **Set as Default Printer:**  
+>    Print jobs output to your default system printer. Ensure your **ZDesigner GK420d** is selected as the default printer in Windows when running thermal label jobs.
+> 
+>    ![Windows Default Printer Selection](assets/zebra-gk420d-default-printer.png)
+
+### Standard Office Printers
+- Compatible with any standard office laser or inkjet printer for **A4 Barcode** and **A4 Product Manipulation** sheets.
+- Fully compatible with **Microsoft Print to PDF** for generating digital barcode sheets.
 
 ---
 
