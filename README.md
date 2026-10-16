@@ -54,12 +54,18 @@ Whether you need to generate a single barcode and copy it to your clipboard in o
 
 ## How to Batch Print from Excel
 
-1. In Excel, select your rows containing up to **2 columns**:
+1. In Excel, LibreOffice Calc, or OpenOffice, arrange your data in up to **2 columns** (do not include headers when selecting):
    - **Column 1 (`Print Data`):** The barcode value, SKU, PZN, or location code.
    - **Column 2 (`Amount`):** Number of copies to print for that row *(optional — defaults to 1 copy if omitted)*.
-2. Copy the selection (`Ctrl + C`) and click **Import** in **PrintSmartPro**.
-3. Choose your **Print Type** (`A4 Barcode`, `A4 Product Manipulation`, or `GK420d Big Label`).
-4. Select your target **Printer** and click **Print Document**.
+
+![Sample Spreadsheet Format](assets/excel-sample.png)
+
+> A ready-to-use sample spreadsheet is included in the repository: [`examples/Data.xls`](examples/Data.xls).
+
+2. Select the cells and copy them (`Ctrl + C`).
+3. Click **Import** in **PrintSmartPro**.
+4. Choose your **Print Type** (`A4 Barcode`, `A4 Product Manipulation`, or `GK420d Big Label`).
+5. Select your target **Printer** and click **Print Document**.
 
 ---
 
